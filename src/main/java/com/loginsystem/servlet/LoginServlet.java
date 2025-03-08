@@ -40,12 +40,12 @@ public class LoginServlet extends HttpServlet {
                 session.setAttribute("user", username);
                 resp.sendRedirect(req.getContextPath() + "/home");
             } else {
-                resp.sendRedirect("login.jsp?error=true");
+                resp.sendRedirect("login?error=true");
             }
 
         } catch (Exception e) {
             e.printStackTrace();
-            resp.sendRedirect("login.jsp?error=true");
+            resp.sendRedirect("login?error=true");
         }
     }
 }

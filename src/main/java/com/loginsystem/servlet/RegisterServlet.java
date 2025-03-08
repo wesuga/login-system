@@ -35,13 +35,13 @@ public class RegisterServlet extends HttpServlet {
 
             int rowsInserted = stmt.executeUpdate();
             if (rowsInserted > 0) {
-                resp.sendRedirect("register.jsp?success=Registration successful! Please log in.");
+                resp.sendRedirect("register?success=Registration successful! Please log in.");
             } else {
-                resp.sendRedirect("register.jsp?error=Registration failed. Try again!");
+                resp.sendRedirect("register?error=Registration failed. Try again!");
             }
         } catch (Exception e) {
             e.printStackTrace();
-            resp.sendRedirect("register.jsp?error=User already exists.");
+            resp.sendRedirect("register?error=User already exists.");
         }
     }
 
