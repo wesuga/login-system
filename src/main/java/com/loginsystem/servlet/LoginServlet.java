@@ -38,7 +38,7 @@ public class LoginServlet extends HttpServlet {
             if (rs.next() && BCrypt.checkpw(password, rs.getString("password"))) {
                 HttpSession session = req.getSession();
                 session.setAttribute("user", username);
-                resp.sendRedirect("welcome.jsp");
+                resp.sendRedirect(req.getContextPath() + "/home");
             } else {
                 resp.sendRedirect("login.jsp?error=true");
             }

@@ -34,7 +34,7 @@
             <% } %>
 
             <p class="text-center mt-2">
-                <a href="register.jsp" class="text-decoration-none small text-muted">Don't have an account? Register here.</a>
+                <a href="register" class="text-decoration-none small text-muted">Don't have an account? Register here.</a>
             </p>
         </div>
     </div>

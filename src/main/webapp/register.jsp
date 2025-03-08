@@ -33,7 +33,7 @@
                     <% } %>
 
                     <p class="text-center mt-2">
-                        <a href="login.jsp" class="text-decoration-none small text-muted">Already have an account? Login here.</a>
+                        <a href="login" class="text-decoration-none small text-muted">Already have an account? Login here.</a>
                     </p>
                 </div>
             </div>
